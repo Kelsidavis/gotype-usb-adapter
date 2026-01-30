@@ -17,9 +17,9 @@ The GoType connector has three wires:
 
 | GoType Wire | Connect To | Function |
 |---|---|---|
-| Thin black wire | GP1 | Data (serial signal) |
+| Red wire | GP1 | Data (serial signal) |
 | Thick black wire | GND | Ground |
-| Red wire | VBUS (5V) | Power |
+| Thin black wire | VBUS (5V) | Power |
 
 ## Features
 
