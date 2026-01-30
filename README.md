@@ -1,4 +1,4 @@
-# GoType Palm Keyboard USB Adapter
+# GoType Palm pilot Keyboard from landware USB Adapter
 
 Converts a GoType Palm keyboard into a standard USB HID keyboard using a Raspberry Pi Pico (RP2040) running CircuitPython.
 
