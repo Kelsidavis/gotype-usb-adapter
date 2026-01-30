@@ -8,9 +8,18 @@ The GoType communicates via a single-wire serial protocol using pulse-width enco
 
 - **Keyboard**: GoType Palm portable keyboard
 - **Microcontroller**: Raspberry Pi Pico (RP2040)
-- **Connection**: GoType data line → GP1 on the Pico
 - **CircuitPython**: 9.2.4
 - **Library**: `adafruit_hid`
+
+### Wiring
+
+The GoType connector has three wires:
+
+| GoType Wire | Connect To | Function |
+|---|---|---|
+| Thin black wire | GP1 | Data (serial signal) |
+| Thick black wire | GND | Ground |
+| Red wire | VBUS (5V) | Power |
 
 ## Features
 
