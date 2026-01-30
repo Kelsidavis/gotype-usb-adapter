@@ -1,6 +1,6 @@
 import board
 import time
-import digitalio
+
 import pulseio
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
@@ -10,10 +10,6 @@ pin_pulses = pulseio.PulseIn(board.GP1, maxlen=40, idle_state=False)
 kbd = Keyboard(usb_hid.devices)
 UNIT = 414
 
-led = digitalio.DigitalInOut(board.LED)
-led.direction = digitalio.Direction.OUTPUT
-led.value = False
-caps_on = False
 
 KEYMAP = {
     # Letters
@@ -223,9 +219,6 @@ while True:
                 oneshot_modifiers.add(kc)
         elif key in HID_MAP:
             kc = HID_MAP[key]
-            if key == 'caps':
-                caps_on = not caps_on
-                led.value = caps_on
             kbd.press(kc)
             # Hold detection
             while True:
